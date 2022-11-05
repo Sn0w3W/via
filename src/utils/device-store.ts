@@ -49,13 +49,13 @@ export async function syncStore(): Promise<DefinitionIndex> {
   // TODO: fall back to cache if can't hit endpoint, notify user
   try {
     // Get hash file
-    const hash = await (await fetch('/definitions/hash.json')).json();
+    const hash = await (await fetch('definitions/hash.json')).json();
 
     if (hash === currentDefinitionIndex.hash) {
       return currentDefinitionIndex;
     }
     // Get definition index file
-    const response = await fetch('/definitions/supported_kbs.json', {
+    const response = await fetch('definitions/supported_kbs.json', {
       cache: 'reload',
     });
     const json: KeyboardDefinitionIndex = await response.json();
@@ -98,7 +98,7 @@ export async function syncStore(): Promise<DefinitionIndex> {
 }
 
 export const setCommonMenus = async (): Promise<CommonMenusMap> => {
-  const url = `/definitions/common-menus.json`;
+  const url = `definitions/common-menus.json`;
   const response = await fetch(url);
   const json: CommonMenusMap = await response.json();
   try {
@@ -117,7 +117,7 @@ export const getMissingDefinition = async <
   version: K,
 ): Promise<[DefinitionVersionMap[K], K]> => {
   const vpid = getVendorProductId(device.vendorId, device.productId);
-  const url = `/definitions/${version}/${vpid}.json`;
+  const url = `definitions/${version}/${vpid}.json`;
   const response = await fetch(url);
   const json: DefinitionVersionMap[K] = await response.json();
   let definitions = deviceStore.get('definitions');

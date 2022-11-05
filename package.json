@@ -1,5 +1,6 @@
 {
   "license": "GPL-3.0",
+  "homepage": "/sonix-via-app",
   "scripts": {
     "start": "concurrently --names \"snowpack-dev,azure-fn-dev\" -c \"bgBlue,bgMagenta\" \"npm run dev\" \"npm --prefix api start\"",
     "dev": "node scripts/build-definitions.js && snowpack dev",

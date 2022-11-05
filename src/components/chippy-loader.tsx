@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const defaultChippy = {
   width: 300,
   height: 300,
-  src: '/images/chippy.png',
+  src: 'images/chippy.png',
 };
 
 const LoaderContainer = styled.div`
