@@ -1,0 +1,24 @@
+{
+  "imports": {
+    "@fortawesome/free-solid-svg-icons": "./@fortawesome/free-solid-svg-icons.js",
+    "@fortawesome/react-fontawesome": "./@fortawesome/react-fontawesome.js",
+    "@microsoft/applicationinsights-web": "./@microsoft/applicationinsights-web.js",
+    "@react-hook/resize-observer": "./@react-hook/resize-observer.js",
+    "@reduxjs/toolkit": "./@reduxjs/toolkit.js",
+    "@the-via/pelpi": "./@the-via/pelpi.js",
+    "@the-via/reader": "./@the-via/reader.js",
+    "@webscopeio/react-textarea-autocomplete": "./@webscopeio/react-textarea-autocomplete.js",
+    "@webscopeio/react-textarea-autocomplete/style.css": "./@webscopeio/react-textarea-autocomplete/style.css",
+    "downshift": "./downshift.js",
+    "json-stringify-pretty-compact": "./json-stringify-pretty-compact.js",
+    "lodash.partition": "./lodash.partition.js",
+    "react": "./react.js",
+    "react-dom": "./react-dom.js",
+    "react-redux": "./react-redux.js",
+    "react-router": "./react-router.js",
+    "react-router-dom": "./react-router-dom.js",
+    "react-select": "./react-select.js",
+    "react-tooltip": "./react-tooltip.js",
+    "styled-components": "./styled-components.js"
+  }
+}
