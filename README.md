@@ -1,7 +1,7 @@
 
 
 # usevia.app
-## Modified for Sonix keyboards
+### Modified for Sonix keyboards
 
 <img src="public/images/chippy.png" width="300"/>
 
