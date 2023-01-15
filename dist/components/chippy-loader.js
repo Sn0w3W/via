@@ -3,7 +3,7 @@ import styled from "../../_snowpack/pkg/styled-components.js";
 const defaultChippy = {
   width: 300,
   height: 300,
-  src: "/images/chippy.png"
+  src: "images/chippy.png"
 };
 const LoaderContainer = styled.div`
   width: 100%;

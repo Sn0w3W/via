@@ -28,11 +28,11 @@ initDeviceStore();
 export async function syncStore() {
   const currentDefinitionIndex = deviceStore.get("definitionIndex");
   try {
-    const hash = await (await fetch("/definitions/hash.json")).json();
+    const hash = await (await fetch("definitions/hash.json")).json();
     if (hash === currentDefinitionIndex.hash) {
       return currentDefinitionIndex;
     }
-    const response = await fetch("/definitions/supported_kbs.json", {
+    const response = await fetch("definitions/supported_kbs.json", {
       cache: "reload"
     });
     const json = await response.json();
@@ -61,7 +61,7 @@ export async function syncStore() {
   return currentDefinitionIndex;
 }
 export const setCommonMenus = async () => {
-  const url = `/definitions/common-menus.json`;
+  const url = `definitions/common-menus.json`;
   const response = await fetch(url);
   const json = await response.json();
   try {
@@ -73,7 +73,7 @@ export const setCommonMenus = async () => {
 };
 export const getMissingDefinition = async (device, version) => {
   const vpid = getVendorProductId(device.vendorId, device.productId);
-  const url = `/definitions/${version}/${vpid}.json`;
+  const url = `definitions/${version}/${vpid}.json`;
   const response = await fetch(url);
   const json = await response.json();
   let definitions = deviceStore.get("definitions");
