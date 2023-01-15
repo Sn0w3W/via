@@ -1,9 +1,11 @@
 
 
 # usevia.app
-### Modified for Sonix keyboards
+
 
 <img src="public/images/chippy.png" width="300"/>
+
+### Modified for Sonix keyboards
 
 ## Useful commands
 ### yarn start
